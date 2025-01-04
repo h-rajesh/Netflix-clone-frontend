@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: black;
+    font-family: 'Martel Sans',sans-serif;
+}
 .main{
     height: 80vh;
     background-image: url("assets/images/bg-header.jpg");
@@ -22,15 +26,25 @@
     color: white;
 }
 nav{
-    max-width: 80vw;
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: auto;
+    height: 100px;
 }
-img{
-    margin: 23px;
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
 }
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
 
 
 .languages{
@@ -64,7 +78,7 @@ img{
     
 }
 #myText{
-    width:200px;
+    width:400px;
     height: 53px;
     color: white;
     background-color: black;
@@ -78,4 +92,82 @@ img{
     border-radius: 5px;
     color: white;
     background-color: red;
+}
+
+#info{
+    width: 123px;
+    height: 53px;
+    border-radius:5px;
+    border-color: white;
+    border-style:double;
+    background-color: black;
+    color: white;margin: 15px;
+}
+h2{
+    color: white;
+    margin-top: 26px;
+    margin-left: 152px;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-left: 152px;
+    gap:12px;
+}
+.slidecontainer{
+    display: flex;
+}
+.features{
+    color: white;
+    display: flex;
+    margin: 23px;
+    justify-content: space-around;
+}
+.f1{
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    gap: 2px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.f1 img{
+    background-color: blue;
+    width: 22px;
+
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.items{
+    width:75%;
+    height: 71px;
+    color: white;
+    background-color:  rgb(45, 45, 45);
+    border: 5px solid black;
+    gap: 2px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+.items p{
+    font-size: 20px;
+    margin-left:20px;
+}
+
+.f1:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.f1:nth-child(2){
+    display: flex;
+    justify-content: f;
 }
