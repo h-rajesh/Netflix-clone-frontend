@@ -213,7 +213,6 @@ h2{
     align-items: center;
        
 }
-tr{
-    display: flex;
-    width: 100%;
+table ,tr ,td{
+    margin: 20px;
 }
